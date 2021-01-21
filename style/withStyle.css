@@ -1,8 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200;400;700&display=swap');
+/* General */
+*{
+    margin: 0;
+    transition: all 0.4s;
+}
 body{
     font-family: 'Roboto Mono', monospace;
     color: #012D38;
 }
-p, li{
+
+p{
     font-family: 'Roboto', sans-serif;
+}
+
+ul{
+    list-style-type: none;
+    margin-bottom: 14px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 14px;
+    text-align: center;
+}
+
+li{
+    margin: 4px;
+    padding: 2px;
+    border: 2px solid  #012D38;
+}
+
+li:hover{
+    background-color: #012D38;
+    color: white;
+}
+
+a{
+    color: #008F00;
+}
+
+a:hover{
+    color: white;
+    background-color: #012D38;
+}
+
+.border{
+    border-bottom: 4px solid#012D38;
+}
+
+h1, h2, h3, h4, p{
+    margin-bottom: 14px;
+}
+
+h2{
+    max-width: 20%;
+}
+
+.fa{
+    color: #012D38;
+}
+
+.fa:hover{
+    color: #008F00;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    width: 90vw;
+    margin: 0 auto;
+}
+
+/* Main */
+
+main{
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.container{
+    display: flex;
+}
+
+/* Profile */
+
+.profile{
+    padding: 40px 0;
+    width: 30%;
+}
+
+.profile-skills{
+    margin-top: 14px;
+}
+
+/* Portfolio */
+
+.portfolio{
+    padding: 40px 0 0 40px;
+    width: 70%;
+    
+}
+
+.experience-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 14px ;
+}
+.project-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 14px ;
+}
+.card-picture{
+    width: 100%;
+}
+
+/* Contact */
+
+.contact{
+    width: 90vw;
+    margin: 0 auto;
+    padding-bottom: 14px;
+}
+
+.social{
+    font-size: 24px;
+}
+
+.copyright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.copyright p{
+    font-family: 'Roboto Mono', monospace;
 }
