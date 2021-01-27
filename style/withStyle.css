@@ -41,7 +41,9 @@ a:hover{
     color: white;
     background-color: #012D38;
 }
-
+.social-link:hover{
+    background-color: white;
+}
 .border{
     border-bottom: 4px solid#012D38;
 }
@@ -108,13 +110,25 @@ main{
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 14px ;
 }
+.experience-card-picture{
+    width: 100%;
+}
 .project-cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 14px ;
+    grid-gap: 7px ;
+    
+}
+
+.skill-list{
+    font-size: 10px;
+}
+.card-top{
+    text-align: center;
 }
 .card-picture{
-    width: 100%;
+    width: 300px;
+    height: 300px;
 }
 
 /* Contact */
