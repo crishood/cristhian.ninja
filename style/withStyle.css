@@ -115,7 +115,7 @@ main{
 }
 .project-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-gap: 7px ;
     
 }
@@ -124,11 +124,11 @@ main{
     font-size: 10px;
 }
 .card-top{
-    text-align: center;
+    text-align: left;
 }
 .card-picture{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: auto;
 }
 
 /* Contact */
@@ -152,4 +152,28 @@ main{
 
 .copyright p{
     font-family: 'Roboto Mono', monospace;
+}
+
+@media only screen and (max-width: 992px) {
+    ul{
+        grid-template-columns: 1fr 1fr;
+    }
+  .experience-cards{
+      display: block;
+  }
+}
+@media only screen and (max-width: 768px) {
+    .container{
+        display: block;
+    }
+    .profile{
+        width: 100%;
+    }
+    .portfolio{
+        padding: 40px 0;
+        width: 100%;
+    }
+    .project-cards{
+        display: block;
+    }
 }
