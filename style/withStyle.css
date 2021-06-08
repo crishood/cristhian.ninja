@@ -1,179 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Mono:wght@200;400;700&display=swap');
-/* General */
-*{
-    margin: 0;
-    transition: all 0.4s;
-}
-body{
-    font-family: 'Roboto Mono', monospace;
-    color: #012D38;
-}
-
-p{
-    font-family: 'Roboto', sans-serif;
-}
-
-ul{
-    list-style-type: none;
-    margin-bottom: 14px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-    font-size: 14px;
-    text-align: center;
-}
-
-li{
-    margin: 4px;
-    padding: 2px;
-    border: 2px solid  #012D38;
-}
-
-li:hover{
-    background-color: #012D38;
-    color: white;
-}
-
-a{
-    color: #008F00;
-}
-
-a:hover{
-    color: white;
-    background-color: #012D38;
-}
-.social-link:hover{
-    background-color: white;
-}
-.border{
-    border-bottom: 4px solid#012D38;
-}
-
-h1, h2, h3, h4, p{
-    margin-bottom: 14px;
-}
-
-h2{
-    max-width: 20%;
-}
-
-.fa{
-    color: #012D38;
-}
-
-.fa:hover{
-    color: #008F00;
-}
-
-/* Header */
-
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-    width: 90vw;
-    margin: 0 auto;
-}
-
-/* Main */
-
-main{
-    width: 90vw;
-    margin: 0 auto;
-}
-
-.container{
-    display: flex;
-}
-
-/* Profile */
-
 .profile{
-    padding: 40px 0;
-    width: 30%;
-}
-
-.profile-skills{
-    margin-top: 14px;
-}
-
-/* Portfolio */
-
-.portfolio{
-    padding: 40px 0 0 40px;
-    width: 70%;
-    
-}
-
-.experience-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 14px ;
-}
-.experience-card-picture{
-    width: 100%;
-}
-.project-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 7px ;
-    
-}
-
-.skill-list{
-    font-size: 10px;
-}
-.card-top{
-    text-align: left;
-}
-.card-picture{
-    width: 100%;
-    height: auto;
-}
-
-/* Contact */
-
-.contact{
-    width: 90vw;
-    margin: 0 auto;
-    padding-bottom: 14px;
-}
-
-.social{
-    font-size: 24px;
-}
-
-.copyright{
     display: flex;
     align-items: center;
+}
+.profile-description{
+    display: flex;
     justify-content: center;
-    
+    align-items: center;
+    margin-right: 40px;
+}
+.profile-presentation{
+    margin-left: 20px;
 }
 
-.copyright p{
-    font-family: 'Roboto Mono', monospace;
-}
 
-@media only screen and (max-width: 992px) {
-    ul{
-        grid-template-columns: 1fr 1fr;
-    }
-  .experience-cards{
-      display: block;
-  }
+/* Responsive */
+
+@media only screen and (max-device-width : 767px) {
+.profile{
+    flex-direction: column;
 }
-@media only screen and (max-width: 768px) {
-    .container{
-        display: block;
-    }
-    .profile{
-        width: 100%;
-    }
-    .portfolio{
-        padding: 40px 0;
-        width: 100%;
-    }
-    .project-cards{
-        display: block;
-    }
+.profile-description{
+    flex-direction: column;
 }
+    }
+
+
