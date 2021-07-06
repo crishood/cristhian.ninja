@@ -18,9 +18,13 @@
 @media only screen and (max-device-width : 767px) {
 .profile{
     flex-direction: column;
+    margin: 0;
+
+
 }
 .profile-description{
     flex-direction: column;
+    margin: 0;
 }
     }
 
